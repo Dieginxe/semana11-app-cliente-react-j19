@@ -22,6 +22,8 @@ public class Instrumento {
 		this.descripcion = descripcion;
 	}
 
+	
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -39,9 +41,16 @@ public class Instrumento {
 		return Objects.hash(id, nombre, categoria, descripcion);
 	}
 
-	
 
-	
+	@Override
+	public String toString() {
+		return "Instrumento{" +
+			"id=" + id +
+			", nombre='" + nombre + '\'' +
+			", categoria='" + categoria + '\'' +
+			", descripcion='" + descripcion + '\'' +
+			'}';
+	}
 
 	public Long getId() {
 		return id;
@@ -73,15 +82,5 @@ public class Instrumento {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
-	}
-
-	@Override
-	public String toString() {
-		return "Employee{" +
-			"id=" + id +
-			", nombre='" + nombre + '\'' +
-			", categoria='" + categoria + '\'' +
-			", descripcion='" + descripcion + '\'' +
-			'}';
 	}
 }
