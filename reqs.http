@@ -1,0 +1,7 @@
+@server = https://shiny-winner-pjg9qrq7v6vc7xj4-8080.app.github.dev
+GET {{server}}/api/employees 
+###
+POST {{server}}/api/employees
+Content-Type: application/json
+
+{"firstName": "Cesar", "lastName": "Diego", "description": "Estudiante"}
